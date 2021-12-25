@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_Mode_Required_Subscription</fullName>
+    <active>true</active>
+    <description>Requires Line Item Date Validation Mode, for subscription products</description>
+    <errorConditionFormula>AND(
+   ISPICKVAL( Type__c , &quot;Subscription&quot;),  
+  ISPICKVAL( LineItemDateValidationMode__c , &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>LineItemDateValidationMode__c</errorDisplayField>
+    <errorMessage>Select the validation mode for a subscription product</errorMessage>
+</ValidationRule>

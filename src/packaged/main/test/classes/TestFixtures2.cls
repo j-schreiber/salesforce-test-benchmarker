@@ -1,24 +1,20 @@
 @isTest
-public class TestFixtures {
+public class TestFixtures2 {
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
-        accs.add(CreateAccount('Test GmbH 1', '1000'));
-        accs.add(CreateAccount('Lieferanten Test GmbH 1', '1001'));
-        accs.add(CreateAccount('Kunden Test AG 1', '1002'));
+        accs.add(CreateAccount('Test GmbH 1', '2000'));
+        accs.add(CreateAccount('Lieferanten Test GmbH 1', '2001'));
+        accs.add(CreateAccount('Kunden Test AG 1', '2002'));
         insert accs;
         return accs;
     }
 
     public static List<Account> InsertFullOrderStructure(Id pricebookId) {
-        return InsertFullOrderStructure(pricebookId, 3);
-    }
-
-    public static List<Account> InsertFullOrderStructure(Id pricebookId, Integer orderCount) {
         List<Account> customers = InsertDefaultAccounts();
         List<Order> orders = new List<Order>();
-        for (Integer i = 0; i < orderCount; i++) {
-            orders.add(CreateOrder('Test Order ' + i, customers[0].Id, pricebookId));
-        }
+        orders.add(CreateOrder('Test Order 10', customers[0].Id, pricebookId));
+        orders.add(CreateOrder('Test Order 11', customers[0].Id, pricebookId));
+        orders.add(CreateOrder('Test Order 12', customers[0].Id, pricebookId));
         insert orders;
         if (pricebookId != null) {
             List<OrderItem> items = new List<OrderItem>();
@@ -33,9 +29,9 @@ public class TestFixtures {
     public static List<Account> InsertFullServiceContractStructure(Id pricebookId) {
         List<Account> customers = InsertDefaultAccounts();
         List<ServiceContract> contracts = new List<ServiceContract>();
-        contracts.add(CreateServiceContract('Test Contract 1', customers[0].Id, pricebookId));
-        contracts.add(CreateServiceContract('Test Contract 2', customers[0].Id, pricebookId));
-        contracts.add(CreateServiceContract('Test Contract 3', customers[0].Id, pricebookId));
+        contracts.add(CreateServiceContract('Test Contract 10', customers[0].Id, pricebookId));
+        contracts.add(CreateServiceContract('Test Contract 11', customers[0].Id, pricebookId));
+        contracts.add(CreateServiceContract('Test Contract 12', customers[0].Id, pricebookId));
         insert contracts;
         if (pricebookId != null) {
             List<ContractLineItem> items = new List<ContractLineItem>();
@@ -73,8 +69,8 @@ public class TestFixtures {
     public static List<Product2> CreateDefaultProducts() {
         List<Product2> prods = new List<Product2>();
         for (Integer i = 0; i < 100; i++) {
-            String prodName = 'Test Base Product {0}';
-            String prodCode = 'A-{0}';
+            String prodName = 'Other Test Base Product {0}';
+            String prodCode = 'A-NEW-{0}';
             prods.add(
                 CreateProduct(
                     String.format(prodName, new List<Object>{ i }),
@@ -85,14 +81,14 @@ public class TestFixtures {
             );
         }
         for (Integer i = 0; i < 100; i++) {
-            String prodName = 'Test Subscription Product {0}';
-            String prodCode = 'B-{0}';
+            String prodName = 'Other Test Subscription Product {0}';
+            String prodCode = 'B-NEW-{0}';
             prods.add(
                 CreateSubscriptionProduct(
                     String.format(prodName, new List<Object>{ i }),
                     String.format(prodCode, new List<Object>{ i }),
                     'Yearly',
-                    '12 months'
+                    '24 months'
                 )
             );
         }

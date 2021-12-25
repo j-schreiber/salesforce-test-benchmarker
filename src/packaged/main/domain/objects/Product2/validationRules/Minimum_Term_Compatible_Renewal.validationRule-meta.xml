@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Term_Compatible_Renewal</fullName>
+    <active>true</active>
+    <description>Minimum contract term must be compatible with the renewal options</description>
+    <errorConditionFormula>AutomaticRenewal__c &amp;&amp; ISPICKVAL(MinimumContractTerm__c, &apos;Lifetime&apos;)</errorConditionFormula>
+    <errorDisplayField>AutomaticRenewal__c</errorDisplayField>
+    <errorMessage>For lifetime offerings, automatic renewal does not make sense. And you know it.</errorMessage>
+</ValidationRule>

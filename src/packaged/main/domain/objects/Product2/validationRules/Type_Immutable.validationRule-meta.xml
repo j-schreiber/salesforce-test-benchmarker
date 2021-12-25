@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Immutable</fullName>
+    <active>true</active>
+    <description>Makes "Type" immutable. This is necessary so ensure integrity for general billing, order management and quoting.</description>
+    <errorConditionFormula>ISCHANGED( Type__c )</errorConditionFormula>
+    <errorDisplayField>Type__c</errorDisplayField>
+    <errorMessage>Cannot be changed after a product was created. Delete or archive the product and create a new one instead.</errorMessage>
+</ValidationRule>

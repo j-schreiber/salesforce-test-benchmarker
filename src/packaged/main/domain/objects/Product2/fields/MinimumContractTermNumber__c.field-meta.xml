@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MinimumContractTermNumber__c</fullName>
+    <description>Converts the picklist value minimum contract term to a number.</description>
+    <externalId>false</externalId>
+    <formula>VALUE(LEFT(TEXT(MinimumContractTerm__c), FIND(&apos; &apos;, TEXT(MinimumContractTerm__c)) - 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The select number, in months</inlineHelpText>
+    <label>Minimum Contract Term</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

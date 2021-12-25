@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LineItemDateValidationMode__c</fullName>
+    <description>Configures the validation mode for start/end date of contract line items. Validation is implemented in validation rules on contract line items.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the validation mode that is applied to contract line items, if they use the product. Any Day allows a start in any day of the month and is billed pro rata per day. Full month allows only start at the beginning of month and is billed pro rata full month.</inlineHelpText>
+    <label>Line Item Date Validation Mode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Month</fullName>
+                <default>false</default>
+                <label>Full Month</label>
+            </value>
+            <value>
+                <fullName>Any Day</fullName>
+                <default>false</default>
+                <label>Any Day</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage>Kann nicht mehr verändert werden, nachdem das Produkt angelegt wurde. Lösche das Produkt oder archiviere es stattdessen und erstelle ein Neues.</errorMessage>
+        <name>Automatic_Renewal_Immutable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kann nicht mehr verändert werden, nachdem das Produkt angelegt wurde. Lösche das Produkt oder archiviere es stattdessen und erstelle ein Neues.</errorMessage>
+        <name>Billing_Cycle_Immutable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Setze den Abrechnungs-Zyklus bei einem Abonnement</errorMessage>
+        <name>Billing_Cycle_Required_Subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wähle den Abrechnungs-Modus bei einem Abonnement</errorMessage>
+        <name>Billing_Mode_Required_Subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kann nicht auf eine restriktivere Einstellung gesetzt werden, nachdem das Produkt erstellt wurde. Lösche das Produkt oder archiviere es stattdessen und erstelle ein Neues.</errorMessage>
+        <name>Date_Validation_Mode_Immutable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Wähle die Kündigungsfrist für das Abonnement</errorMessage>
+        <name>Termination_Required_Subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lebenslange Laufzeit kann nur bei einmaligen Abrechnungen verwendet werden</errorMessage>
+        <name>Minimum_Term_Compatible_Cycle</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Automatische Verlängerung macht bei lebenslanger Laufzeit keinen Sinn</errorMessage>
+        <name>Minimum_Term_Compatible_Renewal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Mindest-Vertragslaufzeit ist bei Abonnement-Produkten erforderlich</errorMessage>
+        <name>Minimum_Term_Required_Subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Für Nicht-Abonnement Produkte bitte alle spezifische Konfigurationen entfernen: Abrechnungs-Zyklus, Abrechnungs-Modus, Kündigungsfrist, Mindest-Vertragslaufzeit, Automatische Verlängerung und Verlängerungs-Laufzeit</errorMessage>
+        <name>Subscription_Config_Forbidden</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Verlängerungs-Laufzeit ist erforderlich, wenn das Produkt automatische Verlängerung aktiviert hat.</errorMessage>
+        <name>Term_Required_For_Auto_Renewal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Kann nicht mehr verändert werden, nachdem das Produkt angelegt wurde. Lösche das Produkt oder archiviere es stattdessen und erstelle ein Neues.</errorMessage>
+        <name>Type_Immutable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Validierungs-Modus für Positionen ist bei Abonnement-Produkten erforderlich</errorMessage>
+        <name>Validation_Mode_Required_Subscription</name>
+    </validationRules>
+</CustomObjectTranslation>

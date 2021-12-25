@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalTerm__c</fullName>
+    <description>Subscription renewal term in months, used to calculate the next end date after renewal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The renewal duration months. Each time, a contract line item is automatically renewed, the number of months is added to the end date.</inlineHelpText>
+    <label>Renewal Term (Months)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Cycle_Immutable</fullName>
+    <active>true</active>
+    <description>Makes "Billing Cycle" immutable. This is necessary to ensure integrity for billing period calculation.</description>
+    <errorConditionFormula>ISCHANGED( BillingCycle__c )</errorConditionFormula>
+    <errorDisplayField>BillingCycle__c</errorDisplayField>
+    <errorMessage>Cannot be changed after a product was created. Delete or archive the product and create a new one instead.</errorMessage>
+</ValidationRule>

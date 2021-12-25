@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wähle den Validierungs- und Abrechnungs-Modus für Vertragspositionen, die dieses Produkt verwenden. "Any Day" erlaubt jeden Tag als Start Datum und wird tagesgenau abgerechnet. "Full Month" erlaubt nur ganze Monate und wird monatsgenau abgerechnet.</help>
+    <label>Validierungs-Modus für Positionen</label>
+    <name>LineItemDateValidationMode__c</name>
+    <picklistValues>
+        <masterLabel>Any Day</masterLabel>
+        <translation><!-- Any Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Month</masterLabel>
+        <translation><!-- Full Month --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

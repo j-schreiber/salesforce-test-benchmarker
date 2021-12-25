@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Term_Required_Subscription</fullName>
+    <active>true</active>
+    <description>Minimum contract term is required for subscription products</description>
+    <errorConditionFormula>ISPICKVAL(Type__c, &apos;Subscription&apos;) &amp;&amp; ISPICKVAL(MinimumContractTerm__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>MinimumContractTerm__c</errorDisplayField>
+    <errorMessage>Select the minimum contract term for a subscription product</errorMessage>
+</ValidationRule>

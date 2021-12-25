@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Required_For_Auto_Renewal</fullName>
+    <active>true</active>
+    <description>Renewal subscription term is required, if the product is &quot;automatic renewal&quot;.</description>
+    <errorConditionFormula>ISBLANK(RenewalTerm__c) &amp;&amp; AutomaticRenewal__c</errorConditionFormula>
+    <errorDisplayField>RenewalTerm__c</errorDisplayField>
+    <errorMessage>Enter a renewal term, if the product is configured to automatic renew.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Term_Compatible_Cycle</fullName>
+    <active>true</active>
+    <description>Minimum contract term must be compatible with the billing cycle.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(BillingCycle__c, &apos;One Time&apos;)) &amp;&amp; ISPICKVAL(MinimumContractTerm__c, &apos;Lifetime&apos;)</errorConditionFormula>
+    <errorDisplayField>MinimumContractTerm__c</errorDisplayField>
+    <errorMessage>Lifetime contract term can only be selected for one-time billing</errorMessage>
+</ValidationRule>

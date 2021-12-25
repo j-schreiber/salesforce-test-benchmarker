@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Cycle_Required_Subscription</fullName>
+    <active>true</active>
+    <description>Billing cycle is required, if the product type is subscription</description>
+    <errorConditionFormula>ISPICKVAL(Type__c, &apos;Subscription&apos;) &amp;&amp; ISPICKVAL(BillingCycle__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>BillingCycle__c</errorDisplayField>
+    <errorMessage>Set the billing cycle for a subscription product</errorMessage>
+</ValidationRule>

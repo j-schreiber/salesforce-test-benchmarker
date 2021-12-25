@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TerminationPeriod__c</fullName>
+    <description>The termination period that applies to all contract line items that use this product.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set the notice period for terminating contract line items of this product. Used to calculate the renewal date and the end date, if the position is terminated.</inlineHelpText>
+    <label>Termination Period</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>1 month</fullName>
+                <default>false</default>
+                <label>1 month</label>
+            </value>
+            <value>
+                <fullName>3 months</fullName>
+                <default>false</default>
+                <label>3 months</label>
+            </value>
+            <value>
+                <fullName>6 months</fullName>
+                <default>false</default>
+                <label>6 months</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

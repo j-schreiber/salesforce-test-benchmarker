@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Config_Forbidden</fullName>
+    <active>true</active>
+    <description>Subscription configuration fields are only allowed, if the product is subscription</description>
+    <errorConditionFormula>AND(
+  NOT(ISPICKVAL(Type__c, &apos;Subscription&apos;)),
+  OR(
+    NOT(ISPICKVAL(BillingCycle__c, &apos;&apos;)),
+    NOT(ISPICKVAL(MinimumContractTerm__c, &apos;&apos;)),
+    NOT(ISPICKVAL(LineItemDateValidationMode__c, &apos;&apos;)),
+    NOT(ISPICKVAL(BillingMode__c, &apos;&apos;)),
+    NOT(ISPICKVAL(TerminationPeriod__c, &apos;&apos;)),
+    AutomaticRenewal__c,
+    NOT(ISBLANK(RenewalTerm__c))
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Type__c</errorDisplayField>
+    <errorMessage>For non subscription products, remove all subscription configuration: Billing Cycle, Billing Mode, Cancellation Period, Minimum Contract Term, Automatic Renewal, Renewal Term and Validation Mode</errorMessage>
+</ValidationRule>
