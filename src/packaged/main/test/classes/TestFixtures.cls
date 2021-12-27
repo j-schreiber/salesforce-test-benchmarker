@@ -31,11 +31,15 @@ public class TestFixtures {
     }
 
     public static List<Account> InsertFullServiceContractStructure(Id pricebookId) {
+        return InsertFullServiceContractStructure(pricebookId, 3);
+    }
+
+    public static List<Account> InsertFullServiceContractStructure(Id pricebookId, Integer contractCount) {
         List<Account> customers = InsertDefaultAccounts();
         List<ServiceContract> contracts = new List<ServiceContract>();
-        contracts.add(CreateServiceContract('Test Contract 1', customers[0].Id, pricebookId));
-        contracts.add(CreateServiceContract('Test Contract 2', customers[0].Id, pricebookId));
-        contracts.add(CreateServiceContract('Test Contract 3', customers[0].Id, pricebookId));
+        for (Integer i = 0; i < contractCount; i++) {
+            contracts.add(CreateServiceContract('Test Contract ' + i, customers[0].Id, pricebookId));
+        }
         insert contracts;
         if (pricebookId != null) {
             List<ContractLineItem> items = new List<ContractLineItem>();

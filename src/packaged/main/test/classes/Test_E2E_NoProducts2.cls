@@ -1,4 +1,4 @@
-@isTest(isParallel=false)
+@isTest
 public class Test_E2E_NoProducts2 {
     @TestSetup
     static void makeData() {

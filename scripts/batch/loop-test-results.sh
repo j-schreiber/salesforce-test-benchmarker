@@ -16,6 +16,6 @@ done
 i=1;
 while true
 do
-    sfdx force:apex:test:run -s ${testsuites} -u $username -d test-results/apex/${runname} -r json
+    sfdx force:apex:test:run -s ${testsuites} -u $username -d test-results/output/${runname} -r json
     let "i++"
 done
