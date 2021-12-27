@@ -2,7 +2,7 @@
 set +e
 
 username='TestBenchmarker'
-testsuites='UpdateTests1,ReadTests1,DeleteTests1,UseTests1,UpdateTests2'
+testsuites='AllNonProductTests,AllProductTests'
 
 while getopts u:s:n: option
 do
@@ -16,6 +16,6 @@ done
 i=1;
 while true
 do
-    sfdx force:apex:test:run -s ${testsuites} -u $username -d test-results/apex/${runname} -r junit
+    sfdx force:apex:test:run -s ${testsuites} -u $username -d test-results/apex/${runname} -r json
     let "i++"
 done

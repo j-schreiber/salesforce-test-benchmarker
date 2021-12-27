@@ -49,7 +49,10 @@ public class TestFixtures {
 
     public static Pricebook2 InsertProductsWithCustomPrices(String pricebookName) {
         List<Product2> prods = InsertProductsWithStandardPrices();
-        return AddProductsToCustomPricebook(pricebookName, 120, prods);
+        // return AddProductsToCustomPricebook(pricebookName, 120, prods);
+        Pricebook2 pb = new Pricebook2(Id = Test.getStandardPricebookId());
+        update pb;
+        return pb;
     }
 
     public static Pricebook2 AddProductsToCustomPricebook(String pricebookName, Decimal unitPrice, List<Product2> products) {

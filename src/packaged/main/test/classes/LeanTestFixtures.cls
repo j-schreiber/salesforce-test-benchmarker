@@ -1,5 +1,5 @@
 @isTest
-public class TestFixtures2 {
+public class LeanTestFixtures {
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
         accs.add(CreateAccount('Test GmbH 1', '2000'));
@@ -202,11 +202,10 @@ public class TestFixtures2 {
     }
 
     private static List<PricebookEntry> InsertStandardPrices(List<Product2> products) {
+        Id standardPricebookId = Test.getStandardPricebookId();
         List<PricebookEntry> prices = new List<PricebookEntry>();
         for (Product2 prod : products) {
-            prices.add(
-                new PricebookEntry(Pricebook2Id = Test.getStandardPricebookId(), Product2Id = prod.Id, UnitPrice = 100, IsActive = true)
-            );
+            prices.add(new PricebookEntry(Pricebook2Id = standardPricebookId, Product2Id = prod.Id, UnitPrice = 100, IsActive = true));
         }
         insert prices;
         return prices;

@@ -1,6 +1,7 @@
 @isTest
 public class Test_E2E_ProductUse6 {
     private static final String PRICEBOOK_NAME = 'Products Use PB 6';
+    private static final Boolean USE_STANDARD_PRICE_BOOK = true;
 
     @TestSetup
     static void makeData() {
@@ -19,7 +20,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -43,7 +44,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -67,7 +68,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -91,7 +92,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -115,7 +116,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -139,7 +140,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -163,7 +164,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -187,7 +188,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -211,7 +212,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }
@@ -235,7 +236,7 @@ public class Test_E2E_ProductUse6 {
             for (PricebookEntry pbe : [
                 SELECT Id, UnitPrice
                 FROM PricebookEntry
-                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.Name = :PRICEBOOK_NAME
+                WHERE Product2.Type__c = 'Subscription' AND Pricebook2.IsStandard = :USE_STANDARD_PRICE_BOOK
             ]) {
                 ois.add(new OrderItem(OrderId = o.Id, PricebookEntryId = pbe.Id, UnitPrice = pbe.UnitPrice, Quantity = 10));
             }

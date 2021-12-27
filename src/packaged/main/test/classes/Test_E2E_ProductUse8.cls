@@ -4,8 +4,8 @@ public class Test_E2E_ProductUse8 {
 
     @TestSetup
     static void makeData() {
-        Pricebook2 pb = TestFixtures2.InsertProductsWithCustomPrices(PRICEBOOK_NAME);
-        List<Account> accs = TestFixtures2.InsertFullServiceContractStructure(pb.Id);
+        Pricebook2 pb = TestFixtures.InsertProductsWithCustomPrices(PRICEBOOK_NAME);
+        List<Account> accs = TestFixtures.InsertFullServiceContractStructure(pb.Id);
     }
 
     @isTest
