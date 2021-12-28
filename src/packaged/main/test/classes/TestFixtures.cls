@@ -1,5 +1,7 @@
 @isTest
 public class TestFixtures {
+    private static final Integer PRODUCT_COUNT = 1;
+
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
         accs.add(CreateAccount('Test GmbH 1', '1000'));
@@ -53,10 +55,10 @@ public class TestFixtures {
 
     public static Pricebook2 InsertProductsWithCustomPrices(String pricebookName) {
         List<Product2> prods = InsertProductsWithStandardPrices();
-        // return AddProductsToCustomPricebook(pricebookName, 120, prods);
-        Pricebook2 pb = new Pricebook2(Id = Test.getStandardPricebookId());
-        update pb;
-        return pb;
+        Pricebook2 standardPricebook = new Pricebook2(Id = Test.getStandardPricebookId());
+        update standardPricebook;
+        return AddProductsToCustomPricebook(pricebookName, 120, prods);
+        // return pb;
     }
 
     public static Pricebook2 AddProductsToCustomPricebook(String pricebookName, Decimal unitPrice, List<Product2> products) {
@@ -77,9 +79,17 @@ public class TestFixtures {
         return prods;
     }
 
+    public static List<Product2> CreateIndividualProducts() {
+        List<Product2> prods = new List<Product2>();
+        prods.add(CreateProduct('Test Base Product 1', 'A-1', 'Base Product', 'Each'));
+        prods.add(CreateProduct('Test Service Product 1', 'C-1', 'Service', 'per Hour'));
+        prods.add(CreateSubscriptionProduct('Test License (Yearly, 24 months)', 'B-1', 'Yearly', '24 months'));
+        return prods;
+    }
+
     public static List<Product2> CreateDefaultProducts() {
         List<Product2> prods = new List<Product2>();
-        for (Integer i = 0; i < 100; i++) {
+        for (Integer i = 1; i <= PRODUCT_COUNT; i++) {
             String prodName = 'Test Base Product {0}';
             String prodCode = 'A-{0}';
             prods.add(
@@ -91,7 +101,7 @@ public class TestFixtures {
                 )
             );
         }
-        for (Integer i = 0; i < 100; i++) {
+        for (Integer i = 1; i <= PRODUCT_COUNT; i++) {
             String prodName = 'Test Subscription Product {0}';
             String prodCode = 'B-{0}';
             prods.add(

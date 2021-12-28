@@ -1,6 +1,6 @@
 @isTest
-public class Test_E2E_ProductUpdates6 {
-    private static final String PRICEBOOK_NAME = 'Product Validation PB 6';
+public class Test_E2E_ProductUpdates7 {
+    private static final String PRICEBOOK_NAME = 'Product Validation PB 7';
 
     @TestSetup
     static void makeData() {

@@ -1,7 +1,7 @@
 @isTest
 public class Test_E2E_ProductUse6 {
     private static final String PRICEBOOK_NAME = 'Products Use PB 6';
-    private static final Boolean USE_STANDARD_PRICE_BOOK = true;
+    private static final Boolean USE_STANDARD_PRICE_BOOK = false;
 
     @TestSetup
     static void makeData() {
