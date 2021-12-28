@@ -1,6 +1,6 @@
 @isTest
 public class TestFixtures {
-    private static final Integer PRODUCT_COUNT = 1;
+    private static final Integer PRODUCT_COUNT = 100;
 
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
