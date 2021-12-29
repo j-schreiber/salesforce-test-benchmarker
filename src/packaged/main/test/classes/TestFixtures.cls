@@ -73,8 +73,7 @@ public class TestFixtures {
     }
 
     public static List<Product2> InsertProductsWithStandardPrices() {
-        List<Product2> prods = CreateDefaultProducts();
-        insert prods;
+        List<Product2> prods = InsertDefaultProducts(PRODUCT_COUNT);
         InsertStandardPrices(prods);
         return prods;
     }
@@ -87,9 +86,15 @@ public class TestFixtures {
         return prods;
     }
 
-    public static List<Product2> CreateDefaultProducts() {
+    public static List<Product2> InsertDefaultProducts(Integer productCount) {
+        List<Product2> prods = CreateDefaultProducts(productCount);
+        insert prods;
+        return prods;
+    }
+
+    public static List<Product2> CreateDefaultProducts(Integer productCount) {
         List<Product2> prods = new List<Product2>();
-        for (Integer i = 1; i <= PRODUCT_COUNT; i++) {
+        for (Integer i = 1; i <= productCount; i++) {
             String prodName = 'Test Base Product {0}';
             String prodCode = 'A-{0}';
             prods.add(
@@ -101,7 +106,7 @@ public class TestFixtures {
                 )
             );
         }
-        for (Integer i = 1; i <= PRODUCT_COUNT; i++) {
+        for (Integer i = 1; i <= productCount; i++) {
             String prodName = 'Test Subscription Product {0}';
             String prodCode = 'B-{0}';
             prods.add(
