@@ -1,6 +1,6 @@
 @isTest
 public class TestFixtures {
-    private static final Integer PRODUCT_COUNT = 100;
+    private static final Integer PRODUCT_COUNT = 1;
 
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
@@ -24,8 +24,9 @@ public class TestFixtures {
         insert orders;
         if (pricebookId != null) {
             List<OrderItem> items = new List<OrderItem>();
+            List<PricebookEntry> pbes = [SELECT Id, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId];
             for (Order o : orders) {
-                items.addAll(createOrderItems(o.Id, [SELECT Id, UnitPrice FROM PricebookEntry WHERE Pricebook2Id = :pricebookId]));
+                items.addAll(createOrderItems(o.Id, pbes));
             }
             insert items;
         }
@@ -76,6 +77,14 @@ public class TestFixtures {
         List<Product2> prods = InsertDefaultProducts(PRODUCT_COUNT);
         InsertStandardPrices(prods);
         return prods;
+    }
+
+    public static Pricebook2 InsertProductsWithStandardPrices(Integer productCount) {
+        List<Product2> prods = InsertDefaultProducts(productCount);
+        InsertStandardPrices(prods);
+        Pricebook2 standardPricebook = new Pricebook2(Id = Test.getStandardPricebookId());
+        update standardPricebook;
+        return standardPricebook;
     }
 
     public static List<Product2> CreateIndividualProducts() {

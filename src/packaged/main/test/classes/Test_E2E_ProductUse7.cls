@@ -9,7 +9,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_0() {
+    static void updatePicklist_WithDmlInALoop_0() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -22,7 +22,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_1() {
+    static void updatePicklist_WithDmlInALoop_1() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -35,7 +35,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_2() {
+    static void updatePicklist_WithDmlInALoop_2() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -48,7 +48,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_3() {
+    static void updatePicklist_WithDmlInALoop_3() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -61,7 +61,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_4() {
+    static void updatePicklist_WithDmlInALoop_4() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -74,7 +74,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_5() {
+    static void updatePicklist_WithDmlInALoop_5() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -87,7 +87,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_6() {
+    static void updatePicklist_WithDmlInALoop_6() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -100,7 +100,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_7() {
+    static void updatePicklist_WithDmlInALoop_7() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -113,7 +113,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_8() {
+    static void updatePicklist_WithDmlInALoop_8() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';
@@ -126,7 +126,7 @@ public class Test_E2E_ProductUse7 {
     }
 
     @isTest
-    static void updatePicklist_WithSoqlInALoop_9() {
+    static void updatePicklist_WithDmlInALoop_9() {
         // ACT
         for (Account a : [SELECT Id FROM Account]) {
             a.PicklistField__c = 'Value Two';

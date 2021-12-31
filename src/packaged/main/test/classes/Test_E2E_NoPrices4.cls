@@ -2,7 +2,7 @@
 public class Test_E2E_NoPrices4 {
     @TestSetup
     static void makeData() {
-        TestFixtures.InsertDefaultProducts(50);
+        TestFixtures.InsertProductsWithStandardPrices(50);
     }
 
     @isTest

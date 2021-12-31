@@ -2,7 +2,8 @@
 public class Test_E2E_NoProducts8 {
     @TestSetup
     static void makeData() {
-        List<Account> accs = TestFixtures.InsertFullServiceContractStructure(null, 20);
+        Pricebook2 pb = TestFixtures.InsertProductsWithStandardPrices(1);
+        List<Account> accs = TestFixtures.InsertFullServiceContractStructure(pb.Id, 20);
     }
 
     @isTest
