@@ -1,5 +1,5 @@
 @isTest
-public class TestMockFactory {
+public with sharing class TestMockFactory {
     public static Order makeMockOrder() {
         return (Order) createGenericMock('MockData_Order_WithLineItems', Order.class);
         // return new Order(Name = 'Test Order', EffectiveDate = System.today());
