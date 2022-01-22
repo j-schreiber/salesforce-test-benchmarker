@@ -1,13 +1,13 @@
 @isTest
 public class TestMockFactory {
     public static Order makeMockOrder() {
-        // return (Order) createGenericMock('MockData_Order_WithLineItems', Order.class);
-        return new Order(Name = 'Test Order', EffectiveDate = System.today());
+        return (Order) createGenericMock('MockData_Order_WithLineItems', Order.class);
+        // return new Order(Name = 'Test Order', EffectiveDate = System.today());
     }
 
     public static ServiceContract makeMockServiceContract() {
-        // return (ServiceContract) createGenericMock('MockData_ServiceContract_WithLineItems', ServiceContract.class);
-        return new ServiceContract(Name = 'Test Contract', StartDate = System.today());
+        return (ServiceContract) createGenericMock('MockData_ServiceContract_WithLineItems', ServiceContract.class);
+        // return new ServiceContract(Name = 'Test Contract', StartDate = System.today());
     }
 
     /**
