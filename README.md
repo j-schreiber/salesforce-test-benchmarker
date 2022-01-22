@@ -19,3 +19,6 @@ sfdx force:data:soql:query -q "SELECT Id, AsyncApexJobId ,StartTime, EndTime, St
 # retrieve the last 10 runs
 sfdx force:data:soql:query -q "SELECT Id, AsyncApexJobId ,StartTime, EndTime, Status, ClassesEnqueued, ClassesCompleted, IsAllTests, TestTime, MethodsEnqueued, MethodsCompleted, MethodsFailed FROM ApexTestRunResult WHERE Status IN ('Completed','Processing') ORDER BY StartTime DESC LIMIT 10" -u TestBenchmarker2 --json > test-run-results.json
 ```
+
+Does order of tests matter?
+-> AllNonProductTests,AllProductTests vs. AllProductTests,AllNonProductTests

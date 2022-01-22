@@ -2,7 +2,7 @@
 set +e
 
 username='TestBenchmarker'
-testsuites='AllNonProductTests,AllProductTests'
+testsuites='Parallelization'
 
 while getopts u:s:n: option
 do

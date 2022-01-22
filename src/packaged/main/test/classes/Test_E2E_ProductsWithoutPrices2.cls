@@ -1,8 +1,8 @@
 @isTest
-public class Test_E2E_NoPrices4 {
+public class Test_E2E_ProductsWithoutPrices2 {
     @TestSetup
     static void makeData() {
-        TestFixtures.InsertProductsWithStandardPrices(50);
+        TestFixtures.InsertDefaultProducts(20);
     }
 
     @isTest
