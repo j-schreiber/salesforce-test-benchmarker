@@ -1,0 +1,53 @@
+{
+  "attributes": {
+    "type": "ServiceContract",
+    "url": "/services/data/v50.0/sobjects/ServiceContract/8101X0000001rmdQAA"
+  },
+  "Id": "8101X0000001rmdQAA",
+  "ApprovalStatus": "Draft",
+  "Name": "2020-09 Draft Test Contract",
+  "StartDate": "2020-10-01",
+  "Pricebook2": {
+    "attributes": {
+      "type": "Pricebook2",
+      "url": "/services/data/v50.0/sobjects/Pricebook2/01s1j000002Vz8YAAS"
+    },
+    "Id": "01s1j000002Vz8YAAS"
+  },
+  "ContractLineItems": {
+    "totalSize": 2,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "ConractLineItem",
+          "url": "/services/data/v50.0/sobjects/ConractLineItem/8111j000000J3dlAAC"
+        },
+        "Id": "8111j000000J3dlAAC",
+        "StartDate": "2020-10-01",
+        "Product2": {
+          "attributes": {
+            "type": "Product2",
+            "url": "/services/data/v50.0/sobjects/Product2/01t1X000005mAwxQBC"
+          },
+          "ProductCode": "A-1"
+        }
+      },
+      {
+        "attributes": {
+          "type": "ConractLineItem",
+          "url": "/services/data/v50.0/sobjects/ConractLineItem/8111j000000J3dmAAC"
+        },
+        "Id": "8111j000000J3dmAAC",
+        "StartDate": null,
+        "Product2": {
+          "attributes": {
+            "type": "Product2",
+            "url": "/services/data/v50.0/sobjects/Product2/01t1X000005mAwxQBD"
+          },
+          "ProductCode": "A-2"
+        }
+      }
+    ]
+  }
+}
