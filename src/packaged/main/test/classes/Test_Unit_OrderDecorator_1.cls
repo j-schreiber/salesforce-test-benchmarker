@@ -1,8 +1,7 @@
 @isTest
 public class Test_Unit_OrderDecorator_1 {
     private static Order makeMockOrder() {
-        // return (Order) TestMockFactory.createGenericMock('MockData_Order_WithLineItems', Order.class);
-        return new Order(Name = 'Test Order', EffectiveDate = System.today());
+        return TestMockFactory.makeMockOrder();
     }
 
     @isTest
