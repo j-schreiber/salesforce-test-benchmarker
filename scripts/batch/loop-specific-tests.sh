@@ -22,5 +22,8 @@ do
     let "i++"
 done
 
+rm test-results/output/${runname}/runs/*.xml
+rm test-results/output/${runname}/runs/test-run-id.txt
+
 sfdx force:data:soql:query -q "SELECT Id,AsyncApexJobId,StartTime,EndTime,Status,ClassesEnqueued,ClassesCompleted,IsAllTests,TestTime,MethodsEnqueued,MethodsCompleted,MethodsFailed FROM ApexTestRunResult WHERE Status IN ('Completed') ORDER BY StartTime DESC LIMIT $iterations" -u $username --json > test-results/output/${runname}/summary.json
 

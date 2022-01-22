@@ -1,0 +1,1334 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 82,
+    "passing": 82,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "testStartTime": "Sat Jan 22 2022 11:33:59",
+    "testExecutionTime": "23794 ms",
+    "testTotalTime": "23794 ms",
+    "commandTime": "168 ms",
+    "hostname": "https://momentum-nosoftware-3837.cs100.my.salesforce.com",
+    "orgId": "00D1x0000002zv6EAA",
+    "username": "test-dmskewrmwi4r@example.com",
+    "testRunId": "7071x00001Txu3r",
+    "userId": "0051x0000091H9wAAE"
+  },
+  "tests": [
+    {
+      "Id": "07M1x00000DJ8fNEAT",
+      "QueueItemId": "7091x000001NudDAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "IncomingMail_CaseStatusClosed_StatusUpdateInWork",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj3AAA",
+        "Name": "E2E_CaseEmailHandling_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 255,
+      "FullName": "E2E_CaseEmailHandling_Test.IncomingMail_CaseStatusClosed_StatusUpdateInWork"
+    },
+    {
+      "Id": "07M1x00000DJ8fOEAT",
+      "QueueItemId": "7091x000001NudDAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "IncomingMail_EmailToExistingCase_CaseStatusInWork",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj3AAA",
+        "Name": "E2E_CaseEmailHandling_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 191,
+      "FullName": "E2E_CaseEmailHandling_Test.IncomingMail_EmailToExistingCase_CaseStatusInWork"
+    },
+    {
+      "Id": "07M1x00000DJ8fPEAT",
+      "QueueItemId": "7091x000001NudDAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "IncomingMail_EmailToNewCase_NoStatusUpdate",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj3AAA",
+        "Name": "E2E_CaseEmailHandling_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 537,
+      "FullName": "E2E_CaseEmailHandling_Test.IncomingMail_EmailToNewCase_NoStatusUpdate"
+    },
+    {
+      "Id": "07M1x00000DJ8fQEAT",
+      "QueueItemId": "7091x000001NudDAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "IncomingMail_ReplyToNewCase_CaseStatusWaitingForClient",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj3AAA",
+        "Name": "E2E_CaseEmailHandling_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 207,
+      "FullName": "E2E_CaseEmailHandling_Test.IncomingMail_ReplyToNewCase_CaseStatusWaitingForClient"
+    },
+    {
+      "Id": "07M1x00000DJ8kvEAD",
+      "QueueItemId": "7091x000001NudDAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "OutgoingMail_CaseStatusClosed_NoStatusUpdate",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj3AAA",
+        "Name": "E2E_CaseEmailHandling_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 188,
+      "FullName": "E2E_CaseEmailHandling_Test.OutgoingMail_CaseStatusClosed_NoStatusUpdate"
+    },
+    {
+      "Id": "07M1x00000DJ8klEAD",
+      "QueueItemId": "7091x000001NudEAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "PopulateFieldsFromAsset_AssetNoSite_FieldsFromAssetPopulated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj4AAA",
+        "Name": "E2E_CaseFieldPopulation_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 246,
+      "FullName": "E2E_CaseFieldPopulation_Test.PopulateFieldsFromAsset_AssetNoSite_FieldsFromAssetPopulated"
+    },
+    {
+      "Id": "07M1x00000DJ8kmEAD",
+      "QueueItemId": "7091x000001NudEAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "PopulateFieldsFromDeviceCheck_OnlyDeviceCheck_SiteAndAssetPopulated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj4AAA",
+        "Name": "E2E_CaseFieldPopulation_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 638,
+      "FullName": "E2E_CaseFieldPopulation_Test.PopulateFieldsFromDeviceCheck_OnlyDeviceCheck_SiteAndAssetPopulated"
+    },
+    {
+      "Id": "07M1x00000DJ8knEAD",
+      "QueueItemId": "7091x000001NudEAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "PopulateFieldsFromRelationshipFields_NoAssetNoSite_NothingPopulated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj4AAA",
+        "Name": "E2E_CaseFieldPopulation_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 83,
+      "FullName": "E2E_CaseFieldPopulation_Test.PopulateFieldsFromRelationshipFields_NoAssetNoSite_NothingPopulated"
+    },
+    {
+      "Id": "07M1x00000DJ8koEAD",
+      "QueueItemId": "7091x000001NudEAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "PopulateFieldsFromSite_SiteNoAsset_FieldsFromSitePopulated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj4AAA",
+        "Name": "E2E_CaseFieldPopulation_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 172,
+      "FullName": "E2E_CaseFieldPopulation_Test.PopulateFieldsFromSite_SiteNoAsset_FieldsFromSitePopulated"
+    },
+    {
+      "Id": "07M1x00000DJ8kpEAD",
+      "QueueItemId": "7091x000001NudEAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "PopulateSiteFromDeviceCheck_SiteWithoutProfile_ThrowsCustomValidationException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj4AAA",
+        "Name": "E2E_CaseFieldPopulation_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 156,
+      "FullName": "E2E_CaseFieldPopulation_Test.PopulateSiteFromDeviceCheck_SiteWithoutProfile_ThrowsCustomValidationException"
+    },
+    {
+      "Id": "07M1x00000DJ8kYEAT",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postDeviceStatus_MultiChargerAboveThreshold_SingleDeviceCheckCreated_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 326,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postDeviceStatus_MultiChargerAboveThreshold_SingleDeviceCheckCreated_201"
+    },
+    {
+      "Id": "07M1x00000DJ8kZEAT",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postDeviceStatus_MultiChargerBelowThreshold_MultipleDeviceChecksCreated_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 381,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postDeviceStatus_MultiChargerBelowThreshold_MultipleDeviceChecksCreated_201"
+    },
+    {
+      "Id": "07M1x00000DJ8kaEAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postDeviceStatus_NoAssetOrSite_DeviceCheckCreated_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 242,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postDeviceStatus_NoAssetOrSite_DeviceCheckCreated_201"
+    },
+    {
+      "Id": "07M1x00000DJ8l5EAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postDeviceStatus_NoChargersInPayload_SingleDeviceCheckCreated_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 271,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postDeviceStatus_NoChargersInPayload_SingleDeviceCheckCreated_201"
+    },
+    {
+      "Id": "07M1x00000DJ8l6EAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postDeviceStatus_NoErrorsStatus_NoDeviceCheckCreated_200",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 169,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postDeviceStatus_NoErrorsStatus_NoDeviceCheckCreated_200"
+    },
+    {
+      "Id": "07M1x00000DJ8l7EAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postMonitoringStatus_Offline_DeviceCheckCreatedAndAssetUpdated_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 349,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postMonitoringStatus_Offline_DeviceCheckCreatedAndAssetUpdated_201"
+    },
+    {
+      "Id": "07M1x00000DJ8l8EAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postMonitoringStatus_Online_NoDeviceCheckCreatedButAssetUpdated_200",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 216,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postMonitoringStatus_Online_NoDeviceCheckCreatedButAssetUpdated_200"
+    },
+    {
+      "Id": "07M1x00000DJ8l9EAD",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postMultiChargerDeviceStatus_AssetHasOpenMultiChargerCase_AddedToExistingCase_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 928,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postMultiChargerDeviceStatus_AssetHasOpenMultiChargerCase_AddedToExistingCase_201"
+    },
+    {
+      "Id": "07M1x00000DJ8lAEAT",
+      "QueueItemId": "7091x000001NudFAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "postMultiChargerDeviceStatus_AssetHasOpenSingleChargerCase_OpenCaseClosed_201",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj5AAA",
+        "Name": "E2E_ChargePilotMonitoring_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 909,
+      "FullName": "E2E_ChargePilotMonitoring_Test.postMultiChargerDeviceStatus_AssetHasOpenSingleChargerCase_OpenCaseClosed_201"
+    },
+    {
+      "Id": "07M1x00000DJ8kqEAD",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_10Cases_NotificationsSendPerCaseAndContact",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 4163,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_10Cases_NotificationsSendPerCaseAndContact"
+    },
+    {
+      "Id": "07M1x00000DJ8krEAD",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_11Cases_TooManyCasesException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 7539,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_11Cases_TooManyCasesException"
+    },
+    {
+      "Id": "07M1x00000DJ8ksEAD",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_AllSiteContactPrioritiesNotMatching_CaseCommentCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 271,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_AllSiteContactPrioritiesNotMatching_CaseCommentCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8ktEAD",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_LegacyCase_NotificationsSendPerContact",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 578,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_LegacyCase_NotificationsSendPerContact"
+    },
+    {
+      "Id": "07M1x00000DJ8kuEAD",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_NewDeviceCheckCase_NotificationsSendPerContact",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 565,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_NewDeviceCheckCase_NotificationsSendPerContact"
+    },
+    {
+      "Id": "07M1x00000DJ8lFEAT",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_NoEnabledSiteContacts_CaseCommentCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 408,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_NoEnabledSiteContacts_CaseCommentCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8lGEAT",
+      "QueueItemId": "7091x000001NudGAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "SendChargePilotIncidentNotifications_SiteIsNotInOps_CaseCommentCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj6AAA",
+        "Name": "E2E_ChargePilotNotifications_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 208,
+      "FullName": "E2E_ChargePilotNotifications_Test.SendChargePilotIncidentNotifications_SiteIsNotInOps_CaseCommentCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8i7EAD",
+      "QueueItemId": "7091x000001NudHAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "insertDeviceCheck_AlertStatusCreated_EventPublished",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj7AAA",
+        "Name": "E2E_DeviceCheckAlerts_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 231,
+      "FullName": "E2E_DeviceCheckAlerts_Test.insertDeviceCheck_AlertStatusCreated_EventPublished"
+    },
+    {
+      "Id": "07M1x00000DJ8i8EAD",
+      "QueueItemId": "7091x000001NudHAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "insertDeviceCheck_AlertStatusDiscarded_NoEventPublished",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj7AAA",
+        "Name": "E2E_DeviceCheckAlerts_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 49,
+      "FullName": "E2E_DeviceCheckAlerts_Test.insertDeviceCheck_AlertStatusDiscarded_NoEventPublished"
+    },
+    {
+      "Id": "07M1x00000DJ8i9EAD",
+      "QueueItemId": "7091x000001NudHAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "insertDeviceChecks_MixedAlertStatus_OnlyRelevantEventsPublished",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj7AAA",
+        "Name": "E2E_DeviceCheckAlerts_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 147,
+      "FullName": "E2E_DeviceCheckAlerts_Test.insertDeviceChecks_MixedAlertStatus_OnlyRelevantEventsPublished"
+    },
+    {
+      "Id": "07M1x00000DJ8kgEAD",
+      "QueueItemId": "7091x000001NudIAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "insertMultiChargerCase_HasOpenSingleChargerCases_CloseOpenCasesForSameAsset",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gj8AAA",
+        "Name": "E2E_DeviceCheckCases_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 709,
+      "FullName": "E2E_DeviceCheckCases_Test.insertMultiChargerCase_HasOpenSingleChargerCases_CloseOpenCasesForSameAsset"
+    },
+    {
+      "Id": "07M1x00000DJ8kHEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getEmailTemplate_TmhChClient_TemplatesConfigured",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 75,
+      "FullName": "ServiceClientProfile_Test.getEmailTemplate_TmhChClient_TemplatesConfigured"
+    },
+    {
+      "Id": "07M1x00000DJ8kIEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getEmailTemplate_TmhDeClient_TemplatesConfigured",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 67,
+      "FullName": "ServiceClientProfile_Test.getEmailTemplate_TmhDeClient_TemplatesConfigured"
+    },
+    {
+      "Id": "07M1x00000DJ8kJEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getEmailTemplate_TmhUsClient_TemplatesConfigured",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 53,
+      "FullName": "ServiceClientProfile_Test.getEmailTemplate_TmhUsClient_TemplatesConfigured"
+    },
+    {
+      "Id": "07M1x00000DJ8kKEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getOrgWideEmailIdForSupportEmail_UnknownSenderAddress_Null",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 22,
+      "FullName": "ServiceClientProfile_Test.getOrgWideEmailIdForSupportEmail_UnknownSenderAddress_Null"
+    },
+    {
+      "Id": "07M1x00000DJ8kLEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getOrgWideSenderEmail_ExistingOrgWideAddress_AddressReturned",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 29,
+      "FullName": "ServiceClientProfile_Test.getOrgWideSenderEmail_ExistingOrgWideAddress_AddressReturned"
+    },
+    {
+      "Id": "07M1x00000DJ8kMEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSupportEmail_RecordHasNoSupportEmail_SupportEmailNotFoundException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 46,
+      "FullName": "ServiceClientProfile_Test.getSupportEmail_RecordHasNoSupportEmail_SupportEmailNotFoundException"
+    },
+    {
+      "Id": "07M1x00000DJ8kNEAT",
+      "QueueItemId": "7091x000001NudJAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSupportEmail_RecordHasSupportEmail_SupportEmailReturned",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjIAAQ",
+        "Name": "ServiceClientProfile_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 40,
+      "FullName": "ServiceClientProfile_Test.getSupportEmail_RecordHasSupportEmail_SupportEmailReturned"
+    },
+    {
+      "Id": "07M1x00000DJ8k7EAD",
+      "QueueItemId": "7091x000001NudKAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "updateMonitoringInfo_OfflineStatusAssetHasLastSeen_OverwrittenWhenOlder",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjQAAQ",
+        "Name": "Unit_ChargePilotController_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 43,
+      "FullName": "Unit_ChargePilotController_Test.updateMonitoringInfo_OfflineStatusAssetHasLastSeen_OverwrittenWhenOlder"
+    },
+    {
+      "Id": "07M1x00000DJ8k8EAD",
+      "QueueItemId": "7091x000001NudKAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "updateMonitoringInfo_OfflineStatusAssetIsBlank_ValuesFromStatusWritten",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjQAAQ",
+        "Name": "Unit_ChargePilotController_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 14,
+      "FullName": "Unit_ChargePilotController_Test.updateMonitoringInfo_OfflineStatusAssetIsBlank_ValuesFromStatusWritten"
+    },
+    {
+      "Id": "07M1x00000DJ8k9EAD",
+      "QueueItemId": "7091x000001NudKAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "updateMonitoringInfo_OnlineStatusAssetIsBlank_ValuesFromStatusWritten",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjQAAQ",
+        "Name": "Unit_ChargePilotController_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 14,
+      "FullName": "Unit_ChargePilotController_Test.updateMonitoringInfo_OnlineStatusAssetIsBlank_ValuesFromStatusWritten"
+    },
+    {
+      "Id": "07M1x00000DJ8k2EAD",
+      "QueueItemId": "7091x000001NudLAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "filterCasesForChargePilotNotifications_HasIncidentType_CaseSustained",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjRAAQ",
+        "Name": "Unit_ChargePilotNotificationService_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 6,
+      "FullName": "Unit_ChargePilotNotificationService_Test.filterCasesForChargePilotNotifications_HasIncidentType_CaseSustained"
+    },
+    {
+      "Id": "07M1x00000DJ8k3EAD",
+      "QueueItemId": "7091x000001NudLAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "filterCasesForChargePilotNotifications_IncidentTypeBlank_CaseFiltered",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjRAAQ",
+        "Name": "Unit_ChargePilotNotificationService_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 3,
+      "FullName": "Unit_ChargePilotNotificationService_Test.filterCasesForChargePilotNotifications_IncidentTypeBlank_CaseFiltered"
+    },
+    {
+      "Id": "07M1x00000DJ8lKEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createChargePilotIncidentNotification_ContactsMatchPriority_NotificationsCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 75,
+      "FullName": "Unit_ChargePilotSite_Test.createChargePilotIncidentNotification_ContactsMatchPriority_NotificationsCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8lLEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createChargePilotIncidentNotification_NotificationLevelHigherCasePrio_ThrowsEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 25,
+      "FullName": "Unit_ChargePilotSite_Test.createChargePilotIncidentNotification_NotificationLevelHigherCasePrio_ThrowsEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8lMEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createChargePilotIncidentNotification_SiteHasNoContacts_ThrowsEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 20,
+      "FullName": "Unit_ChargePilotSite_Test.createChargePilotIncidentNotification_SiteHasNoContacts_ThrowsEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8lNEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createChargePilotIncidentNotification_SiteNotInOperation_ThrowsEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 18,
+      "FullName": "Unit_ChargePilotSite_Test.createChargePilotIncidentNotification_SiteNotInOperation_ThrowsEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8lOEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createChargePilotIncidentNotification_UnmappedCasePriority_ThrowsEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 26,
+      "FullName": "Unit_ChargePilotSite_Test.createChargePilotIncidentNotification_UnmappedCasePriority_ThrowsEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8lPEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createSiteContactNotifications_SiteHasNoContacts_ThrowsEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 19,
+      "FullName": "Unit_ChargePilotSite_Test.createSiteContactNotifications_SiteHasNoContacts_ThrowsEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8lQEAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSla_MappedPicklistValue_MappedEnumReturned",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 15,
+      "FullName": "Unit_ChargePilotSite_Test.getSla_MappedPicklistValue_MappedEnumReturned"
+    },
+    {
+      "Id": "07M1x00000DJ8lREAT",
+      "QueueItemId": "7091x000001NudMAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSla_UnmappedPicklistValue_StandardReturned",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjTAAQ",
+        "Name": "Unit_ChargePilotSite_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 13,
+      "FullName": "Unit_ChargePilotSite_Test.getSla_UnmappedPicklistValue_StandardReturned"
+    },
+    {
+      "Id": "07M1x00000DJ8kWEAT",
+      "QueueItemId": "7091x000001NudNAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "makeChargePilotSite_UnknownSiteId_ThrowsInvalidArgumentException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjSAAQ",
+        "Name": "Unit_ChargePilotSiteFactory_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 205,
+      "FullName": "Unit_ChargePilotSiteFactory_Test.makeChargePilotSite_UnknownSiteId_ThrowsInvalidArgumentException"
+    },
+    {
+      "Id": "07M1x00000DJ8kXEAT",
+      "QueueItemId": "7091x000001NudNAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "makeChargePilotSite_ValidId_ChargePilotSiteCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjSAAQ",
+        "Name": "Unit_ChargePilotSiteFactory_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 46,
+      "FullName": "Unit_ChargePilotSiteFactory_Test.makeChargePilotSite_ValidId_ChargePilotSiteCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8jnEAD",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "construct_CaseIdOnly_DefaultsInitialized",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 9,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.construct_CaseIdOnly_DefaultsInitialized"
+    },
+    {
+      "Id": "07M1x00000DJ8joEAD",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "construct_CaseIdWithException_DefaultsInitialized",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 7,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.construct_CaseIdWithException_DefaultsInitialized"
+    },
+    {
+      "Id": "07M1x00000DJ8jpEAD",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "construct_CaseIdWithSuccessSendResults_DefaultsInitialized",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 12,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.construct_CaseIdWithSuccessSendResults_DefaultsInitialized"
+    },
+    {
+      "Id": "07M1x00000DJ8jqEAD",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getErrorsAsCaseComments_ErrorSendResults_CaseCommentsWithSendResultErrsCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 23,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.getErrorsAsCaseComments_ErrorSendResults_CaseCommentsWithSendResultErrsCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8jrEAD",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getErrorsAsCaseComments_HasException_CaseCommentWithExceptionMsgCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 6,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.getErrorsAsCaseComments_HasException_CaseCommentWithExceptionMsgCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8kCEAT",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getErrorsAsCaseComments_IgnoredErrorSendResults_EmptyList",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 14,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.getErrorsAsCaseComments_IgnoredErrorSendResults_EmptyList"
+    },
+    {
+      "Id": "07M1x00000DJ8kDEAT",
+      "QueueItemId": "7091x000001NudOAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getErrorsAsCaseComments_SuccessSendResults_EmptyList",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjUAAQ",
+        "Name": "Unit_CpIncidentNotificationResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 12,
+      "FullName": "Unit_CpIncidentNotificationResult_Test.getErrorsAsCaseComments_SuccessSendResults_EmptyList"
+    },
+    {
+      "Id": "07M1x00000DJ8jxEAD",
+      "QueueItemId": "7091x000001NudPAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "createNewAlertEvent_FullDeviceCheck_AllEventFieldsPopulated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjVAAQ",
+        "Name": "Unit_DeviceCheck_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 128,
+      "FullName": "Unit_DeviceCheck_Test.createNewAlertEvent_FullDeviceCheck_AllEventFieldsPopulated"
+    },
+    {
+      "Id": "07M1x00000DJ8ctEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitAsset_HasAssetAdded_DmlExecuted",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 185,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitAsset_HasAssetAdded_DmlExecuted"
+    },
+    {
+      "Id": "07M1x00000DJ8cuEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitAsset_NoAssetAdded_NoDmlExecuted",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 5,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitAsset_NoAssetAdded_NoDmlExecuted"
+    },
+    {
+      "Id": "07M1x00000DJ8cvEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitDeviceChecksAsync_HasChecks_JobEnqueued",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 179,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitDeviceChecksAsync_HasChecks_JobEnqueued"
+    },
+    {
+      "Id": "07M1x00000DJ8kbEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitDeviceChecks_HasChecks_DmlExecuted",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 120,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitDeviceChecks_HasChecks_DmlExecuted"
+    },
+    {
+      "Id": "07M1x00000DJ8kcEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitDeviceChecks_NoChecksAdded_NoDmlExecuted",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 17,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitDeviceChecks_NoChecksAdded_NoDmlExecuted"
+    },
+    {
+      "Id": "07M1x00000DJ8kdEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitTransactionAsync_AssetAndDeviceCheck_JobsEnqueued",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 191,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitTransactionAsync_AssetAndDeviceCheck_JobsEnqueued"
+    },
+    {
+      "Id": "07M1x00000DJ8keEAD",
+      "QueueItemId": "7091x000001NudQAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "commitTransaction_AssetAndDeviceCheck_DmlsExecuted",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjWAAQ",
+        "Name": "Unit_DeviceProcessingResult_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 146,
+      "FullName": "Unit_DeviceProcessingResult_Test.commitTransaction_AssetAndDeviceCheck_DmlsExecuted"
+    },
+    {
+      "Id": "07M1x00000DJ8l0EAD",
+      "QueueItemId": "7091x000001NudRAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "construct_EmptyStatus_AllNullPointersCatched",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjYAAQ",
+        "Name": "Unit_DeviceStatus_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 9,
+      "FullName": "Unit_DeviceStatus_Test.construct_EmptyStatus_AllNullPointersCatched"
+    },
+    {
+      "Id": "07M1x00000DJ8jiEAD",
+      "QueueItemId": "7091x000001NudSAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_NoConnectorsOnChargerHasOpenCase_SingleChargerCreatedAlertDiscarded",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjXAAQ",
+        "Name": "Unit_DeviceStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 79,
+      "FullName": "Unit_DeviceStatusProcessor_Test.execute_NoConnectorsOnChargerHasOpenCase_SingleChargerCreatedAlertDiscarded"
+    },
+    {
+      "Id": "07M1x00000DJ8jjEAD",
+      "QueueItemId": "7091x000001NudSAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_NoConnectorsOnCharger_SingleChargerErrorCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjXAAQ",
+        "Name": "Unit_DeviceStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 20,
+      "FullName": "Unit_DeviceStatusProcessor_Test.execute_NoConnectorsOnCharger_SingleChargerErrorCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8jkEAD",
+      "QueueItemId": "7091x000001NudSAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_SingleChargerError_AssetHasOpenMultiChargerCase_CheckCreatedAlertDiscarded",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjXAAQ",
+        "Name": "Unit_DeviceStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 31,
+      "FullName": "Unit_DeviceStatusProcessor_Test.execute_SingleChargerError_AssetHasOpenMultiChargerCase_CheckCreatedAlertDiscarded"
+    },
+    {
+      "Id": "07M1x00000DJ8jlEAD",
+      "QueueItemId": "7091x000001NudSAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_StatusWithoutErrors_NoChecksCreated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjXAAQ",
+        "Name": "Unit_DeviceStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 30,
+      "FullName": "Unit_DeviceStatusProcessor_Test.execute_StatusWithoutErrors_NoChecksCreated"
+    },
+    {
+      "Id": "07M1x00000DJ8kREAT",
+      "QueueItemId": "7091x000001NudTAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "Construct_FullyValid_PropertiesInitialized",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjZAAQ",
+        "Name": "Unit_EmailNotification_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 35,
+      "FullName": "Unit_EmailNotification_Test.Construct_FullyValid_PropertiesInitialized"
+    },
+    {
+      "Id": "07M1x00000DJ8kSEAT",
+      "QueueItemId": "7091x000001NudTAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "RenderEmailMessage_FullyValid_ReturnSingleEmailMessage",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjZAAQ",
+        "Name": "Unit_EmailNotification_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 141,
+      "FullName": "Unit_EmailNotification_Test.RenderEmailMessage_FullyValid_ReturnSingleEmailMessage"
+    },
+    {
+      "Id": "07M1x00000DJ8kTEAT",
+      "QueueItemId": "7091x000001NudTAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "RenderEmailMessage_TemplateNull_ThrowEmailException",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjZAAQ",
+        "Name": "Unit_EmailNotification_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 29,
+      "FullName": "Unit_EmailNotification_Test.RenderEmailMessage_TemplateNull_ThrowEmailException"
+    },
+    {
+      "Id": "07M1x00000DJ8jPEAT",
+      "QueueItemId": "7091x000001NudUAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getDetails_BlankAsset_TimestampFromMonitoringStatus",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjaAAA",
+        "Name": "Unit_MonitoringStatusCheck_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 31,
+      "FullName": "Unit_MonitoringStatusCheck_Test.getDetails_BlankAsset_TimestampFromMonitoringStatus"
+    },
+    {
+      "Id": "07M1x00000DJ8jQEAT",
+      "QueueItemId": "7091x000001NudUAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getDetails_NoAsset_TimestampFromMonitoringStatus",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjaAAA",
+        "Name": "Unit_MonitoringStatusCheck_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 10,
+      "FullName": "Unit_MonitoringStatusCheck_Test.getDetails_NoAsset_TimestampFromMonitoringStatus"
+    },
+    {
+      "Id": "07M1x00000DJ8jREAT",
+      "QueueItemId": "7091x000001NudUAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSubject_BlankAsset_TimestampFromMonitoringStatus",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjaAAA",
+        "Name": "Unit_MonitoringStatusCheck_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 14,
+      "FullName": "Unit_MonitoringStatusCheck_Test.getSubject_BlankAsset_TimestampFromMonitoringStatus"
+    },
+    {
+      "Id": "07M1x00000DJ8jSEAT",
+      "QueueItemId": "7091x000001NudUAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "getSubject_NoAsset_TimestampFromMonitoringStatus",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjaAAA",
+        "Name": "Unit_MonitoringStatusCheck_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 13,
+      "FullName": "Unit_MonitoringStatusCheck_Test.getSubject_NoAsset_TimestampFromMonitoringStatus"
+    },
+    {
+      "Id": "07M1x00000DJ8jsEAD",
+      "QueueItemId": "7091x000001NudVAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_OfflineStatusHasOpenCase_CheckCreatedAssetUpdated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjbAAA",
+        "Name": "Unit_MonitoringStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 59,
+      "FullName": "Unit_MonitoringStatusProcessor_Test.execute_OfflineStatusHasOpenCase_CheckCreatedAssetUpdated"
+    },
+    {
+      "Id": "07M1x00000DJ8jtEAD",
+      "QueueItemId": "7091x000001NudVAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_OfflineStatusNoCase_CheckCreatedAssetUpdated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjbAAA",
+        "Name": "Unit_MonitoringStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 17,
+      "FullName": "Unit_MonitoringStatusProcessor_Test.execute_OfflineStatusNoCase_CheckCreatedAssetUpdated"
+    },
+    {
+      "Id": "07M1x00000DJ8juEAD",
+      "QueueItemId": "7091x000001NudVAAS",
+      "StackTrace": null,
+      "Message": null,
+      "AsyncApexJobId": "7071x00001Txu3rAAB",
+      "MethodName": "execute_OnlineStatusNoCase_NoCheckCreatedAssetUpdated",
+      "Outcome": "Pass",
+      "ApexClass": {
+        "Id": "01p1x0000092gjbAAA",
+        "Name": "Unit_MonitoringStatusProcessor_Test",
+        "NamespacePrefix": null
+      },
+      "RunTime": 16,
+      "FullName": "Unit_MonitoringStatusProcessor_Test.execute_OnlineStatusNoCase_NoCheckCreatedAssetUpdated"
+    }
+  ]
+}
