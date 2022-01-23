@@ -2,6 +2,60 @@
 public class TestFixtures {
     private static final Integer PRODUCT_COUNT = 1;
 
+    /**
+     * Creates and inserts a default regular user with named permissions
+     *
+     * @param alias         Unique alias; used to identify the user
+     * @param permSets      List of permission sets to assign
+     * @return `User`      Created regular user
+     */
+    public static User CreateStandardUser(String alias, List<String> permSets) {
+        Profile standardProfile = [SELECT Id FROM Profile WHERE Name = 'Standard User' LIMIT 1];
+        User testUser = new User(
+            Email = 'benchmarker-test-user@example.com',
+            Username = String.valueOf(System.now().getTime()) + 'benchmarker-test-user@example.com',
+            Alias = alias,
+            LastName = 'Tester',
+            LanguageLocaleKey = 'en_US',
+            EmailEncodingKey = 'UTF-8',
+            LocaleSidKey = 'en_US',
+            ProfileId = standardProfile.Id,
+            TimeZoneSidKey = String.valueOf(UserInfo.getTimeZone())
+        );
+        System.runAs(new User(Id = UserInfo.getUserId())) {
+            insert testUser;
+            AssignPermissionSetsToUser(testUser.Id, permSets);
+        }
+        return testUser;
+    }
+
+    /**
+     * @description
+     * This method assigns a list of permission sets by name to a given user id. It is idempotent and only assigns those
+     * permission sets, that are not yet assigned to the user
+     *
+     * @param   userId              The id of the user that will get the permission set assigned
+     * @param   permissionSetNames  The names of the permission sets to assign
+     */
+    public static void AssignPermissionSetsToUser(String userId, List<String> permissionSetNames) {
+        List<PermissionSet> nonAssignedPermSets = [
+            SELECT Id
+            FROM PermissionSet
+            WHERE
+                Id NOT IN (
+                    SELECT PermissionSetId
+                    FROM PermissionSetAssignment
+                    WHERE AssigneeId = :userId AND PermissionSet.Name IN :permissionSetNames
+                )
+                AND Name IN :permissionSetNames
+        ];
+        List<PermissionSetAssignment> newAssignments = new List<PermissionSetAssignment>();
+        for (PermissionSet permSet : nonAssignedPermSets) {
+            newAssignments.add(new PermissionSetAssignment(AssigneeId = userId, PermissionSetId = permSet.Id));
+        }
+        Database.insert(newAssignments);
+    }
+
     public static List<Account> InsertDefaultAccounts() {
         List<Account> accs = new List<Account>();
         accs.add(CreateAccount('Test GmbH 1', '1000'));

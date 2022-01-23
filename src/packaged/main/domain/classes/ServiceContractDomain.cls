@@ -14,8 +14,12 @@ public class ServiceContractDomain {
 
     public static void cleanFields(List<ServiceContract> triggerNew) {
         for (ServiceContract sc : triggerNew) {
+            ServiceContractDecorator dec = new ServiceContractDecorator(sc);
             if (sc.Schedules__c == null) {
                 sc.Schedules__c = 0;
+            }
+            if (sc.SpecialAuditField__c != null) {
+                dec.processAuditField();
             }
         }
     }

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Special_Custom_Permission</name>
+    </customPermissions>
     <description>Full access to products and pricebooks.</description>
     <fieldPermissions>
         <editable>true</editable>

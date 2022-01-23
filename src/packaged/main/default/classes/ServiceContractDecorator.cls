@@ -38,6 +38,15 @@ public class ServiceContractDecorator {
         return result;
     }
 
+    public void processAuditField() {
+        DateTime startTime = System.now();
+        DateTime endTime = startTime;
+        while ((endTime.getTime() - startTime.getTime()) < 100) {
+            System.debug((endTime.getTime() - startTime.getTime()));
+            endTime = System.now();
+        }
+    }
+
     public class ContractScheduleResult {
         public List<ContractSchedule__c> obsoleteSchedules = new List<ContractSchedule__c>();
         public List<ContractSchedule__c> newSchedules = new List<ContractSchedule__c>();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Field_Locked_When_Approved</fullName>
+    <active>true</active>
+    <description>Locks the audit field, if the contract is approved</description>
+    <errorConditionFormula>AND(
+        ISCHANGED( SpecialAuditField__c ),
+        ISPICKVAL( ApprovalStatus, &quot;Approved&quot; ),
+        !$Permission.Special_Custom_Permission 
+    )</errorConditionFormula>
+    <errorDisplayField>SpecialAuditField__c</errorDisplayField>
+    <errorMessage>You cannot change the audit field, once contract is approved</errorMessage>
+</ValidationRule>
